@@ -97,7 +97,7 @@ client.infos = new Enmap({ name: "infos", dataDir: "./databases/infos"});
         require(`./handlers/${h}`)(client);
     })|| config.token
 //Start the Bot
-client.login(process.env.token || config.token)
+client.login(process.env.BOT_TOKEN)
 
 /**
  * @INFO
